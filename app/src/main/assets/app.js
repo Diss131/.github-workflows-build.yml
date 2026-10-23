@@ -47,7 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.onclick = () => loadTorrents(m.id, m.title);
                 moviesDiv.appendChild(card);
             });
-        } catch (e) { status.textContent = 'Ошибка поиска.'; console.error(e); }
+                } catch (e) { 
+            status.textContent = 'Ошибка: ' + e.message; 
+            console.error(e); 
+        }
     }
 
     async function loadTorrents(id, title) {
