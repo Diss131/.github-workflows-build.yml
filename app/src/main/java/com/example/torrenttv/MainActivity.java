@@ -27,7 +27,10 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setAllowUniversalAccessFromFileURLs(true); // Отключает CORS!
         
         webView.setWebViewClient(new WebViewClient());
+                // Включаем отладку, чтобы видеть ошибки в консоли
+        WebView.setWebContentsDebuggingEnabled(true);
         
+        webView.loadUrl("file:///android_asset/index.html");
         webView.loadUrl("file:///android_asset/index.html");
     }
 }
