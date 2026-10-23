@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torrent TV Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header><h1>🍿 Torrent TV Player</h1></header>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Введите название (Spider-Man)...">
+            <button id="searchBtn">Найти</button>
+        </div>
+        <div id="status" class="status">Введите название</div>
+        <div id="moviesList" class="grid-container"></div>
+        <div id="torrentsList" class="list-container" style="display: none;"></div>
+        <div id="playerContainer" style="display: none; margin-top: 30px;">
+            <h2 id="playerTitle" style="text-align: center;">Просмотр</h2>
+            <div id="playerWrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 8px;">
+                <video id="videoPlayer" controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></video>
+            </div>
+            <div id="playerStatus" style="text-align: center; margin-top: 15px; color: #aaa;">Ожидание...</div>
+            <div style="text-align: center; margin-top: 15px;">
+                <button id="backBtn" style="background: #333; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">← Назад</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
