@@ -1,0 +1,21 @@
+body { background-color: #121212; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 30px; }
+h1 { margin: 0 0 10px 0; }
+p { color: #888; }
+.search-box { display: flex; gap: 10px; margin-bottom: 30px; }
+.search-box input { flex: 1; padding: 15px; font-size: 18px; border-radius: 8px; border: none; outline: none; background: #2a2a2a; color: white; }
+.search-box button { padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 8px; border: none; background: #e50914; color: white; cursor: pointer; transition: 0.2s; }
+.search-box button:hover { background: #ff0a16; }
+.status { margin: 20px 0; color: #aaa; text-align: center; font-size: 16px; }
+.grid-container { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 30px; }
+.movie-card { background: #1e1e1e; padding: 15px 20px; border-radius: 8px; cursor: pointer; transition: 0.2s; border: 2px solid #333; font-size: 16px; max-width: 300px; }
+.movie-card:hover { border-color: #e50914; background: #2a2a2a; transform: scale(1.02); }
+.list-container { display: flex; flex-direction: column; gap: 10px; }
+.torrent-row { display: flex; justify-content: space-between; align-items: center; background: #1e1e1e; padding: 15px 20px; border-radius: 8px; border-left: 4px solid #333; transition: 0.2s; }
+.torrent-row:hover { border-left-color: #e50914; background: #252525; }
+.badge { padding: 5px 10px; border-radius: 5px; font-size: 13px; font-weight: bold; }
+.quality { background: #0056b3; }
+.seeds { background: #1e7e34; }
+.play-btn { background: #e50914; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 15px; transition: 0.2s; }
+.play-btn:hover { background: #ff0a16; box-shadow: 0 0 10px rgba(229, 9, 20, 0.5); }
